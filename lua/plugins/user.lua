@@ -33,10 +33,4 @@ return {
     end,
   },
   ------SONARLINT------
-  ------Inlay------
-  {
-    url = "https://github.com/simrat39/inlay-hints.nvim",
-    config = function() require("inlay-hints").setup() end,
-  },
-  ------Inlay------
 }
