@@ -22,5 +22,4 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.colorscheme.nord-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
-  { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
 }
