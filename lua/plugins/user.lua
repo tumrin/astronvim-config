@@ -43,12 +43,12 @@ return {
         eol = {
           parameter = {
             separator = ", ",
-            format = function(hints) return string.format(" <- %s", hints) end,
+            format = function(hints) return string.format(" << %s", hints) end,
           },
 
           type = {
             separator = ", ",
-            format = function(hints) return string.format("%s", hints) end,
+            format = function(hints) return string.format(" >> %s", hints) end,
           },
         },
       }
