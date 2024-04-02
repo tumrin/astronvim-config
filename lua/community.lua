@@ -9,7 +9,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.cpp" },
-  { import = "astrocommunity.pack.cs" },
   { import = "astrocommunity.pack.zig" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.java" },
@@ -24,7 +23,6 @@ return {
   { import = "astrocommunity.pack.angular" },
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.tailwindcss" },
-  { import = "astrocommunity.pack.templ" },
   -- Data formats
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.json" },
