@@ -6,7 +6,7 @@ return {
   ------SONARLINT------
   {
     url = "https://gitlab.com/schrieveslaach/sonarlint.nvim",
-    ft = { "python", "cpp", "javascript", "typescript", "html", "java" },
+    ft = { "python", "cpp", "c", "javascript", "typescript", "html", "java", "go", "php" },
     config = function()
       require("sonarlint").setup {
         server = {
@@ -17,17 +17,22 @@ return {
             vim.fn.expand "$MASON/share/sonarlint-analyzers/sonarpython.jar",
             vim.fn.expand "$MASON/share/sonarlint-analyzers/sonarcfamily.jar",
             vim.fn.expand "$MASON/share/sonarlint-analyzers/sonarjs.jar",
-            vim.fn.expand "$MASON/share/sonarlint-analyzers/sonarhtml.jar.jar",
+            vim.fn.expand "$MASON/share/sonarlint-analyzers/sonarhtml.jar",
             vim.fn.expand "$MASON/share/sonarlint-analyzers/sonarjava.jar",
+            vim.fn.expand "$MASON/share/sonarlint-analyzers/sonargo.jar",
+            vim.fn.expand "$MASON/share/sonarlint-analyzers/sonarphp.jar",
           },
         },
         filetypes = {
           "python",
           "cpp",
+          "c",
           "javascript",
           "typescript",
           "html",
           "java",
+          "go",
+          "php",
         },
       }
     end,
