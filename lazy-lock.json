@@ -11,6 +11,8 @@
   "astrotheme": { "branch": "main", "commit": "e056b8216214f7140eda3e0adcfc27efba705231" },
   "astroui": { "branch": "main", "commit": "5aa0f687e111a120a33746c89926604134f9ae74" },
   "better-escape.nvim": { "branch": "master", "commit": "7e86edafb8c7e73699e0320f225464a298b96d12" },
+  "clangd_extensions.nvim": { "branch": "main", "commit": "2992ba8c13c2de41f91a7c7488bf1c48bcec31fe" },
+  "cmake-tools.nvim": { "branch": "master", "commit": "a4cd0b3a2c8a166a54b36bc00579954426748959" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
   "cmp-dap": { "branch": "master", "commit": "ea92773e84c0ad3288c3bc5e452ac91559669087" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "5af77f54de1b16c34b23cba810150689a3a90312" },
@@ -75,5 +77,6 @@
   "typescript-tools.nvim": { "branch": "master", "commit": "c43d9580c3ff5999a1eabca849f807ab33787ea7" },
   "venv-selector.nvim": { "branch": "main", "commit": "3c57922256e7e26205a25f5a42ecf7104d9f2c78" },
   "vim-illuminate": { "branch": "master", "commit": "305bf07b919ac526deb5193280379e2f8b599926" },
-  "which-key.nvim": { "branch": "main", "commit": "ce741eb559c924d72e3a67d2189ad3771a231414" }
+  "which-key.nvim": { "branch": "main", "commit": "ce741eb559c924d72e3a67d2189ad3771a231414" },
+  "zig-tools.nvim": { "branch": "master", "commit": "78a85278fe5d480da2f01df4db898757d7e953b5" }
 }
