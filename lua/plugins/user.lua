@@ -38,26 +38,4 @@ return {
     end,
   },
   ------SONARLINT------
-  --TODO: can be removed when nvim 0.10 is released
-  ------INLAY HINTS------
-  {
-    url = "https://github.com/simrat39/inlay-hints.nvim",
-    config = function()
-      require("inlay-hints").setup {
-        renderer = "inlay-hints/render/eol",
-        eol = {
-          parameter = {
-            separator = ", ",
-            format = function(hints) return string.format(" << %s", hints) end,
-          },
-
-          type = {
-            separator = ", ",
-            format = function(hints) return string.format(" >> %s", hints) end,
-          },
-        },
-      }
-    end,
-  },
-  ------INLAY HINTS------
 }
