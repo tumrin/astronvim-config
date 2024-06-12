@@ -15,6 +15,13 @@ return {
     formatting = {
       timeout_ms = 2000, -- default format timeout
     },
+    mappings = {
+      n = {
+        grr = {
+          function() require("telescope.builtin").lsp_references() end,
+        },
+      },
+    },
     ---@diagnostic disable: missing-fields
     config = {
       ------RUST------

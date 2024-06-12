@@ -5,6 +5,8 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
+  -- Mapping
+  { import = "astrocommunity.recipes.telescope-lsp-mappings" },
   -- Languages
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
