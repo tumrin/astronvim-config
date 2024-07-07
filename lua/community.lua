@@ -18,8 +18,8 @@ return {
   { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.fish" },
-  { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.python-ruff" },
+  { import = "astrocommunity.pack.typescript" },
   -- Frameworks
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.angular" },
