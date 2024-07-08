@@ -20,6 +20,7 @@ return {
   { import = "astrocommunity.pack.fish" },
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.fish" },
   -- Frameworks
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.angular" },
@@ -31,6 +32,7 @@ return {
   { import = "astrocommunity.pack.proto" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.xml" },
   { import = "astrocommunity.pack.html-css" },
   -- Themes
   { import = "astrocommunity.colorscheme.nord-nvim" },
@@ -40,4 +42,5 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.sql" },
+  { import = "astrocommunity.pack.terraform" },
 }
