@@ -29,7 +29,6 @@ return {
         settings = {
           ["rust-analyzer"] = {
             check = {
-              allFeatures = true,
               command = "clippy",
               extraArgs = { "--no-deps" },
             },
