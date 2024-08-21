@@ -24,7 +24,6 @@ return {
     },
     ---@diagnostic disable: missing-fields
     config = {
-      ------RUST------
       rust_analyzer = {
         settings = {
           ["rust-analyzer"] = {
@@ -47,7 +46,11 @@ return {
           },
         },
       },
-      ------RUST------
+    },
+    servers = { "gdscript", "gdshader_lsp" },
+    handlers = {
+      gdscript = function() require("lspconfig").gdscript.setup {} end,
+      gdshader_lsp = function() require("lspconfig").gdshader_lsp.setup {} end,
     },
   },
 }
