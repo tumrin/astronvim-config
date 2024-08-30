@@ -39,6 +39,7 @@ return {
   { import = "astrocommunity.colorscheme.nord-nvim" },
   { import = "astrocommunity.colorscheme.nordic-nvim" },
   -- Other
+  { import = "astrocommunity.docker.lazydocker" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.cmake" },
