@@ -47,10 +47,11 @@ return {
         },
       },
     },
-    servers = { "gdscript", "gdshader_lsp" },
+    servers = { "gdscript", "gdshader_lsp", "biome" },
     handlers = {
       gdscript = function() require("lspconfig").gdscript.setup {} end,
       gdshader_lsp = function() require("lspconfig").gdshader_lsp.setup {} end,
+      biome = function() require("lspconfig").biome.setup {} end,
     },
   },
 }
