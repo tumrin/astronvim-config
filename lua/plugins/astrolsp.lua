@@ -18,8 +18,8 @@ return {
   ---@type AstroLSPOpts
   opts = {
     features = {
-      autoformat = true, -- enable or disable auto formatting on start
       inlay_hints = true, -- enable/disable inlay hints on start
+      signature_help = true,
     },
     formatting = {
       timeout_ms = 2000, -- default format timeout
