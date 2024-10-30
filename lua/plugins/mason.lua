@@ -6,6 +6,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     opts = {
       ensure_installed = {
+        "biome",
         "rust_analyzer",
         "zls",
       },

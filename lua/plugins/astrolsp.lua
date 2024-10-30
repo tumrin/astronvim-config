@@ -3,6 +3,15 @@
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
 --       as this provides autocomplete and documentation while editing
 
+local function disabled()
+  local util = require("null-ls.utils").make_conditional_utils()
+  if util.has_file "biome.json" then
+    return { "jsonls" }
+  else
+    return { "biome" }
+  end
+end
+
 ---@type LazySpec
 return {
   "AstroNvim/astrolsp",
@@ -14,6 +23,7 @@ return {
     },
     formatting = {
       timeout_ms = 2000, -- default format timeout
+      disabled = disabled(),
     },
     mappings = {
       n = {
@@ -47,11 +57,10 @@ return {
         },
       },
     },
-    servers = { "gdscript", "gdshader_lsp", "biome" },
+    servers = { "gdscript", "gdshader_lsp" },
     handlers = {
       gdscript = function() require("lspconfig").gdscript.setup {} end,
       gdshader_lsp = function() require("lspconfig").gdshader_lsp.setup {} end,
-      biome = function() require("lspconfig").biome.setup {} end,
     },
   },
 }
