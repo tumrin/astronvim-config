@@ -36,7 +36,6 @@ return {
   { import = "astrocommunity.pack.xml" },
   { import = "astrocommunity.pack.html-css" },
   -- Themes
-  { import = "astrocommunity.colorscheme.nord-nvim" },
   { import = "astrocommunity.colorscheme.nordic-nvim" },
   -- Other
   { import = "astrocommunity.docker.lazydocker" },
