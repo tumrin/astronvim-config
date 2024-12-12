@@ -24,6 +24,20 @@ return {
     },
     ---@diagnostic disable: missing-fields
     config = {
+      vtsls = {
+        settings = {
+          vtsls = {
+            experimental = {
+              completion = {
+                enableServerSideFuzzyMatch = true,
+              },
+            },
+            tsserver = {
+              maxTsServerMemory = 8192,
+            },
+          },
+        },
+      },
       rust_analyzer = {
         settings = {
           ["rust-analyzer"] = {
