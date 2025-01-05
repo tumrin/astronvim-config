@@ -46,6 +46,11 @@ return {
               extraArgs = { "--no-deps" },
             },
             cargo = {
+              extraEnv = {
+                CARGO_PROFILE_RUST_ANALYZER_INHERITS = "dev",
+                RUSTFLAGS = "-Clinker=clang -Clink-arg=-fuse-ld=mold",
+              },
+              extraArgs = { "--profile", "rust-analyzer" },
               features = "all",
             },
             procMacro = {
