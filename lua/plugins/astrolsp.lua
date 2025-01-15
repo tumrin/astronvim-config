@@ -26,13 +26,13 @@ return {
     config = {
       vtsls = {
         settings = {
-          vtsls = {
-            experimental = {
-              completion = {
-                enableServerSideFuzzyMatch = true,
-              },
-            },
+          typescript = {
             tsserver = {
+              experimental = {
+                completion = {
+                  enableServerSideFuzzyMatch = true,
+                },
+              },
               maxTsServerMemory = 8192,
             },
           },
