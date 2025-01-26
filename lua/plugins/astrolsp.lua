@@ -24,6 +24,9 @@ return {
     },
     ---@diagnostic disable: missing-fields
     config = {
+      html = {
+        filetypes = { "html", "htmldjango" },
+      },
       vtsls = {
         settings = {
           typescript = {

@@ -23,6 +23,10 @@ return {
         -- for prettierd
         prettierd = function()
           require("null-ls").register(require("null-ls").builtins.formatting.prettierd.with {
+            filetypes = require("astrocore").list_insert_unique(
+              require("null-ls").builtins.formatting.prettierd.filetypes,
+              { "htmldjango" }
+            ),
             condition = function(utils)
               return utils.has_file ".prettierrc"
                 or utils.has_file ".prettierrc.json"
