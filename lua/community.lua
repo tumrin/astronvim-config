@@ -22,6 +22,7 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.fish" },
   { import = "astrocommunity.pack.godot" },
+  { import = "astrocommunity.pack.cs" },
   -- Frameworks
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.angular" },
