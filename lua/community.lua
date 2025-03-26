@@ -45,4 +45,6 @@ return {
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.terraform" },
+  -- Motions
+  { import = "astrocommunity.motion.hop-nvim" },
 }
