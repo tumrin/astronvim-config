@@ -1,42 +1,37 @@
--- Customize Mason plugins
+-- Customize Mason
 
 ---@type LazySpec
 return {
+  -- use mason-tool-installer for automatically installing Mason packages
   {
-    "williamboman/mason-lspconfig.nvim",
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    -- overrides `require("mason-tool-installer").setup(...)`
     opts = {
+      -- Make sure to use the names found in `:Mason`
       ensure_installed = {
+        -- install language servers
         "biome",
-        "rust_analyzer",
+        "rust-analyzer",
         "zls",
-      },
-    },
-  },
-  {
-    "jay-babu/mason-null-ls.nvim",
-    opts = {
-      ensure_installed = {
+
+        -- install formatters
         "gofumpt",
         "prettierd",
-      },
-      handlers = {
-        -- for prettierd
-        prettierd = function()
-          require("null-ls").register(require("null-ls").builtins.formatting.prettierd.with {
-            condition = function(utils)
-              return utils.has_file ".prettierrc"
-                or utils.has_file ".prettierrc.json"
-                or utils.has_file ".prettierrc.js"
-            end,
-          })
-        end,
+
+        -- install debuggers
+
+        -- install any other package
       },
     },
-  },
-  {
-    "jay-babu/mason-nvim-dap.nvim",
-    opts = {
-      ensure_installed = {},
+    handlers = {
+      -- for prettierd
+      prettierd = function()
+        require("null-ls").register(require("null-ls").builtins.formatting.prettierd.with {
+          condition = function(utils)
+            return utils.has_file ".prettierrc" or utils.has_file ".prettierrc.json" or utils.has_file ".prettierrc.js"
+          end,
+        })
+      end,
     },
   },
 }

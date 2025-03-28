@@ -9,19 +9,20 @@ return {
   ---@type AstroLSPOpts
   opts = {
     features = {
+      codelens = true, -- enable/disable codelens refresh on start
       inlay_hints = true, -- enable/disable inlay hints on start
+      semantic_tokens = true, -- enable/disable semantic token highlighting
       signature_help = true,
     },
     formatting = {
-      timeout_ms = 2000, -- default format timeout
-    },
-    mappings = {
-      n = {
-        grr = {
-          function() require("telescope.builtin").lsp_references() end,
-        },
+      format_on_save = {
+        enabled = true, -- enable or disable format on save globally
       },
+      disabled = { -- disable formatting capabilities for the listed language servers
+      },
+      timeout_ms = 1000, -- default format timeout
     },
+    servers = { "gdscript", "gdshader_lsp" },
     ---@diagnostic disable: missing-fields
     config = {
       html = {
@@ -69,10 +70,16 @@ return {
         },
       },
     },
-    servers = { "gdscript", "gdshader_lsp" },
     handlers = {
       gdscript = function() require("lspconfig").gdscript.setup {} end,
       gdshader_lsp = function() require("lspconfig").gdshader_lsp.setup {} end,
+    },
+    mappings = {
+      n = {
+        grr = {
+          function() require("telescope.builtin").lsp_references() end,
+        },
+      },
     },
   },
 }
