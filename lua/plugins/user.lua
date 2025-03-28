@@ -14,7 +14,13 @@ return {
     },
     opts = {},
   },
-  ------Outline--------
+  ----Outline--------
+  ----Disable quickgd from godot community pack------
+  {
+    "QuickGD/quickgd.nvim",
+    enabled = false,
+  },
+  ----Disable quickgd from godot community pack------
   ------Hop------------
   {
     "smoka7/hop.nvim",
