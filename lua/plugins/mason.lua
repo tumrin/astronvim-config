@@ -16,22 +16,11 @@ return {
 
         -- install formatters
         "gofumpt",
-        "prettierd",
 
         -- install debuggers
 
         -- install any other package
       },
-    },
-    handlers = {
-      -- for prettierd
-      prettierd = function()
-        require("null-ls").register(require("null-ls").builtins.formatting.prettierd.with {
-          condition = function(utils)
-            return utils.has_file ".prettierrc" or utils.has_file ".prettierrc.json" or utils.has_file ".prettierrc.js"
-          end,
-        })
-      end,
     },
   },
 }
