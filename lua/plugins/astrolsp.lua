@@ -76,8 +76,11 @@ return {
     },
     mappings = {
       n = {
+        ["<leader>fs"] = {
+          function() require("snacks.picker").lsp_workspace_symbols() end,
+        },
         grr = {
-          function() require("telescope.builtin").lsp_references() end,
+          function() require("snacks.picker").lsp_references() end,
         },
       },
     },

@@ -6,7 +6,7 @@
 return {
   "AstroNvim/astrocommunity",
   -- Mapping
-  { import = "astrocommunity.recipes.telescope-lsp-mappings" },
+  { import = "astrocommunity.recipes.picker-lsp-mappings" },
   -- Languages
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
