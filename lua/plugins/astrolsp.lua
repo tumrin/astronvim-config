@@ -72,9 +72,6 @@ return {
         ["<leader>fs"] = {
           function() require("snacks.picker").lsp_workspace_symbols() end,
         },
-        grr = {
-          function() require("snacks.picker").lsp_references() end,
-        },
       },
     },
   },
