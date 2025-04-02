@@ -26,6 +26,7 @@ return {
           typescript = {
             tsserver = {
               maxTsServerMemory = 8192,
+              nodePath = "/usr/bin/node",
             },
           },
           vtsls = {

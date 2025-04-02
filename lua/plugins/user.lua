@@ -36,8 +36,8 @@ return {
             ["Ö"] = { function() require("hop").hint_lines() end, desc = "Hop hint lines" },
           },
           v = {
-            ["s"] = { function() require("hop").hint_words { extend_visual = true } end, desc = "Hop hint words" },
-            ["<S-s>"] = {
+            ["ö"] = { function() require("hop").hint_words { extend_visual = true } end, desc = "Hop hint words" },
+            ["Ö"] = {
               function() require("hop").hint_lines { extend_visual = true } end,
               desc = "Hop hint lines",
             },
