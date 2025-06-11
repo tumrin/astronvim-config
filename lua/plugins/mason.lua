@@ -10,7 +10,6 @@ return {
       -- Make sure to use the names found in `:Mason`
       ensure_installed = {
         -- install language servers
-        "biome",
         "rust-analyzer",
         "zls",
 

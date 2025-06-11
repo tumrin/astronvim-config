@@ -23,6 +23,9 @@ return {
   { import = "astrocommunity.pack.fish" },
   { import = "astrocommunity.pack.godot" },
   { import = "astrocommunity.pack.cs" },
+  -- Tools
+  { import = "astrocommunity.pack.biome" },
+  { import = "astrocommunity.pack.eslint" },
   -- Frameworks
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.angular" },
