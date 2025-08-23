@@ -15,7 +15,16 @@ return {
     opts = {},
   },
   ----Outline--------
-  ------Hop------------
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("lspconfig").qmlls.setup {
+        cmd = { "qmlls", "-E" },
+        filetypes = { "qml", "qtquick" },
+        root_dir = require("lspconfig.util").root_pattern("qmlls.ini", ".git", "."),
+      }
+    end,
+  }, ------Hop------------
   {
     "smoka7/hop.nvim",
     opts = {},

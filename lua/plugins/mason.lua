@@ -12,6 +12,7 @@ return {
         -- install language servers
         "rust-analyzer",
         "zls",
+        "qmlls",
 
         -- install formatters
         "gofumpt",
