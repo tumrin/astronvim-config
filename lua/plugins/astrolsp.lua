@@ -15,7 +15,6 @@ return {
     formatting = {
       timeout_ms = 2000, -- default format timeout
     },
-    servers = { "gdscript", "gdshader_lsp" },
     ---@diagnostic disable: missing-fields
     config = {
       html = {
@@ -63,10 +62,6 @@ return {
           },
         },
       },
-    },
-    handlers = {
-      gdscript = function() require("lspconfig").gdscript.setup {} end,
-      gdshader_lsp = function() require("lspconfig").gdshader_lsp.setup {} end,
     },
     mappings = {
       n = {

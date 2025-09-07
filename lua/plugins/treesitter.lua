@@ -10,6 +10,9 @@ return {
       "lua",
       "vim",
       "qmljs",
+      "gdscript",
+      "godot_resource",
+      "glsl",
       -- add more arguments for adding more treesitter parsers
     },
   },

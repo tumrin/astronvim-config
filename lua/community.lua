@@ -21,7 +21,7 @@ return {
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.fish" },
-  { import = "astrocommunity.pack.godot" },
+  -- { import = "astrocommunity.pack.godot" },
   { import = "astrocommunity.pack.cs" },
   -- Tools
   { import = "astrocommunity.pack.biome" },
