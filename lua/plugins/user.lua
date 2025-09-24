@@ -36,11 +36,18 @@ return {
             ["gs"] = { function() require("hop").hint_words() end, desc = "Hop hint words" },
             ["g<S-s>"] = { function() require("hop").hint_lines() end, desc = "Hop hint lines" },
             ["ö"] = { function() require("hop").hint_words() end, desc = "Hop hint words" },
-            ["Ö"] = { function() require("hop").hint_lines() end, desc = "Hop hint lines" },
+            ["ä"] = { function() require("hop").hint_lines() end, desc = "Hop hint lines" },
+            [";"] = { function() require("hop").hint_words() end, desc = "Hop hint words" },
+            ["'"] = { function() require("hop").hint_lines() end, desc = "Hop hint lines" },
           },
           v = {
             ["ö"] = { function() require("hop").hint_words { extend_visual = true } end, desc = "Hop hint words" },
-            ["Ö"] = {
+            ["ä"] = {
+              function() require("hop").hint_lines { extend_visual = true } end,
+              desc = "Hop hint lines",
+            },
+            [";"] = { function() require("hop").hint_words { extend_visual = true } end, desc = "Hop hint words" },
+            ["'"] = {
               function() require("hop").hint_lines { extend_visual = true } end,
               desc = "Hop hint lines",
             },
