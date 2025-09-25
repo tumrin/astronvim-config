@@ -31,6 +31,7 @@ return {
   { import = "astrocommunity.pack.angular" },
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.spring-boot" },
   -- Data formats
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.json" },
