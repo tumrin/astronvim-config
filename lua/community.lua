@@ -26,6 +26,7 @@ return {
   -- Tools
   { import = "astrocommunity.pack.biome" },
   { import = "astrocommunity.pack.eslint" },
+  { import = "astrocommunity.pack.prettier" },
   -- Frameworks
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.angular" },
@@ -49,4 +50,5 @@ return {
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.terraform" },
+  { import = "astrocommunity.motion.nvim-surround" },
 }
