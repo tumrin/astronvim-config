@@ -13,6 +13,7 @@ return {
         "rust-analyzer",
         "zls",
         "qmlls",
+        "slang",
 
         -- install formatters
         "gofumpt",
