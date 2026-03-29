@@ -4,6 +4,19 @@
 
 ---@type LazySpec
 return {
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters = {
+        prettierd = {
+          require_cwd = true,
+        },
+        prettier = {
+          require_cwd = true,
+        },
+      },
+    },
+  },
   ------Outline--------
   {
     "hedyhli/outline.nvim",
