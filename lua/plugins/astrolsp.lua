@@ -15,6 +15,7 @@ return {
     formatting = {
       timeout_ms = 2000, -- default format timeout
     },
+    servers = { "gdscript", "gdshader_lsp" },
     ---@diagnostic disable: missing-fields
     config = {
       html = {
