@@ -23,7 +23,7 @@ return {
   { import = "astrocommunity.pack.python.basedpyright" },
   { import = "astrocommunity.pack.python.ruff" },
   -- { import = "astrocommunity.pack.godot" },
-  { import = "astrocommunity.pack.cs" },
+  -- { import = "astrocommunity.pack.cs" },
   -- Tools
   { import = "astrocommunity.pack.biome" },
   { import = "astrocommunity.pack.eslint" },

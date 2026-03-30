@@ -20,6 +20,11 @@ return {
       html = {
         filetypes = { "html", "htmldjango" },
       },
+      qmlls = {
+        cmd = { "qmlls", "-E" },
+        filetypes = { "qml", "qtquick" },
+        root_dir = require("lspconfig.util").root_pattern("qmlls.ini", ".git", "."),
+      },
       vtsls = {
         settings = {
           typescript = {
