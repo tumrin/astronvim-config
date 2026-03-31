@@ -73,6 +73,11 @@ return {
       n = {
         ["<leader>fs"] = {
           function() require("snacks.picker").lsp_workspace_symbols() end,
+          desc = "LSP Symbols",
+        },
+        ["<leader>fS"] = {
+          function() require("snacks.picker").lsp_symbols() end,
+          desc = "Symbols",
         },
       },
     },
