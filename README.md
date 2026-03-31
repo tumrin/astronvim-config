@@ -1,34 +1,32 @@
-# AstroNvim Template
+# AstroNvim config
 
-**NOTE:** This is for AstroNvim v5+
-
-A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+Based on AstroNvim v6 [template](https://github.com/AstroNvim/template)
 
 ## 🛠️ Installation
 
-#### Make a backup of your current nvim and shared folder
+### Install as main config
 
 ```shell
+# Backup your current config
 mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
 mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
+
+# clone config to main nvim config
+git clone https://github.com/tumrin/https://github.com/tumrin/astronvim-config ~/.config/nvim 
+
+# start neovim
+nvim 
 ```
 
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
-#### Clone the repository
+### Alternatively install as separate config
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
+# clone config to separate nvim config
+git clone https://github.com/tumrin/https://github.com/tumrin/astronvim-config ~/.config/nvim-tumrin 
+
+# start neovim with specified config
+NVIM_APPNAME="nvim-tumrin" nvim 
 ```
 
-#### Start Neovim
-
-```shell
-nvim
-```
