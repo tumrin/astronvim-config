@@ -14,12 +14,10 @@ return {
         "zls",
         "qmlls",
         "slang",
-
         -- install formatters
         "gofumpt",
-
         -- install debuggers
-
+        "codelldb", --TODO: remove when astrocommunity updates rust package
         -- install any other package
       },
     },

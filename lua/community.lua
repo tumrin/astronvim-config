@@ -9,7 +9,7 @@ return {
   { import = "astrocommunity.recipes.picker-lsp-mappings" },
   -- Languages
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.rust" },
+  -- { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.zig" },
   { import = "astrocommunity.pack.go" },

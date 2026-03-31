@@ -43,7 +43,7 @@ return {
           },
         },
       },
-      rust_analyzer = {
+      ["rust-analyzer"] = {
         settings = {
           ["rust-analyzer"] = {
             check = {
