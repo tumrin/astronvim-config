@@ -2,6 +2,22 @@
 
 Based on AstroNvim v6 [template](https://github.com/AstroNvim/template)
 
+## Dependencies
+- Nerd fonts
+- Nodejs
+- Npm
+- Go
+- Rust
+- Cargo
+- .Net
+- Java
+- Python
+- Pip
+- Zig
+- Docker
+- Lazygit
+- Lazydocker
+
 ## 🛠️ Installation
 
 ### Install as main config
