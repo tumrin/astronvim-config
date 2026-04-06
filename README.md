@@ -30,7 +30,7 @@ mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 
 # clone config to main nvim config
-git clone https://github.com/tumrin/https://github.com/tumrin/astronvim-config ~/.config/nvim 
+git clone https://github.com/tumrin/astronvim-config ~/.config/nvim 
 
 # start neovim
 nvim 
@@ -40,7 +40,7 @@ nvim
 
 ```shell
 # clone config to separate nvim config
-git clone https://github.com/tumrin/https://github.com/tumrin/astronvim-config ~/.config/nvim-tumrin 
+git clone https://github.com/tumrin/astronvim-config ~/.config/nvim-tumrin 
 
 # start neovim with specified config
 NVIM_APPNAME="nvim-tumrin" nvim 
