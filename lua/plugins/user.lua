@@ -3,7 +3,7 @@ return {
   -- TODO: remove when astrocommunity is updated
   {
     "mrcjkb/rustaceanvim",
-    version = "^8", -- Recommended
+    version = "^9", -- Recommended
     lazy = false, -- This plugin is already lazy
     specs = {
       {
