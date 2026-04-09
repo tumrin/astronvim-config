@@ -9,11 +9,11 @@ return {
   ---@type AstroLSPOpts
   opts = {
     features = {
-      inlay_hints = true, -- enable/disable inlay hints on start
+      inlay_hints = true,
       signature_help = true,
     },
     formatting = {
-      timeout_ms = 2000, -- default format timeout
+      timeout_ms = 5000,
     },
     servers = { "gdscript", "gdshader_lsp" },
     ---@diagnostic disable: missing-fields
@@ -28,17 +28,25 @@ return {
       },
       vtsls = {
         settings = {
-          typescript = {
-            tsserver = {
-              maxTsServerMemory = 8192,
-              nodePath = "node",
-            },
-          },
           vtsls = {
             experimental = {
               completion = {
                 enableServerSideFuzzyMatch = true,
               },
+            },
+          },
+          javascript = {
+            format = {
+              enable = false,
+            },
+          },
+          typescript = {
+            format = {
+              enable = false,
+            },
+            tsserver = {
+              maxTsServerMemory = 8192,
+              nodePath = "node",
             },
           },
         },
