@@ -35,15 +35,7 @@ return {
               },
             },
           },
-          javascript = {
-            format = {
-              enable = false,
-            },
-          },
           typescript = {
-            format = {
-              enable = false,
-            },
             tsserver = {
               maxTsServerMemory = 8192,
               nodePath = "node",
