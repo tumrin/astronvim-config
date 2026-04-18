@@ -18,7 +18,6 @@ return {
         -- install formatters
         "gofumpt",
         -- install debuggers
-        "codelldb", --TODO: remove when astrocommunity updates rust package
         -- install any other package
       },
     },

@@ -1,27 +1,5 @@
 ---@type LazySpec
 return {
-  -- TODO: remove when astrocommunity is updated
-  {
-    "mrcjkb/rustaceanvim",
-    version = "^9", -- Recommended
-    lazy = false, -- This plugin is already lazy
-    specs = {
-      {
-        "AstroNvim/astrolsp",
-        optional = true,
-        ---@type AstroLSPOpts
-        opts = {
-          handlers = { rust_analyzer = false }, -- disable setup of `rust_analyzer`
-        },
-      },
-    },
-  },
-  -- TODO: remove when astrocommunity is updated
-  {
-    "saecki/crates.nvim",
-    tag = "stable",
-    config = function() require("crates").setup() end,
-  },
   {
     "stevearc/conform.nvim",
     opts = {
