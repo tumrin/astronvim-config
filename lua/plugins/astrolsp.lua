@@ -27,6 +27,10 @@ return {
         root_dir = require("lspconfig.util").root_pattern("qmlls.ini", ".git", "."),
       },
       vtsls = {
+        on_attach = function(client, bufnr)
+          client.server_capabilities.documentFormattingProvider = false
+          client.server_capabilities.documentRangeFormattingProvider = false
+        end,
         settings = {
           vtsls = {
             experimental = {
