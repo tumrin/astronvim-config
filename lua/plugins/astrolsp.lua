@@ -18,6 +18,17 @@ return {
     servers = { "gdscript", "gdshader_lsp" },
     ---@diagnostic disable: missing-fields
     config = {
+      eslint = {
+        flags = {
+          allow_incremental_sync = false,
+          debounce_text_changes = 1000,
+        },
+        settings = {
+          run = "onSave",
+          runtime = "node",
+          execArgv = "--max-old-space-size=8192",
+        },
+      },
       html = {
         filetypes = { "html", "htmldjango" },
       },
