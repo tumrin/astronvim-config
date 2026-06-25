@@ -23,17 +23,18 @@ return {
   { import = "astrocommunity.pack.python.basedpyright" },
   { import = "astrocommunity.pack.python.ruff" },
   -- { import = "astrocommunity.pack.godot" },
-  { import = "astrocommunity.pack.cs" },
+  -- { import = "astrocommunity.pack.cs" },
   -- Tools
   { import = "astrocommunity.pack.biome" },
   { import = "astrocommunity.pack.eslint" },
   { import = "astrocommunity.pack.prettier" },
+  -- { import = "astrocommunity.lsp.sonarlint-nvim" },
   -- Frameworks
   { import = "astrocommunity.pack.svelte" },
   -- { import = "astrocommunity.pack.angular" },
-  { import = "astrocommunity.pack.vue" },
-  { import = "astrocommunity.pack.tailwindcss" },
-  { import = "astrocommunity.pack.spring-boot" },
+  -- { import = "astrocommunity.pack.vue" },
+  -- { import = "astrocommunity.pack.tailwindcss" },
+  -- { import = "astrocommunity.pack.spring-boot" },
   -- Data formats
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.json" },
