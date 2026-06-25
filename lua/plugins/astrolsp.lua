@@ -21,7 +21,7 @@ return {
       eslint = {
         flags = {
           allow_incremental_sync = false,
-          debounce_text_changes = 1000,
+          debounce_text_changes = 5000,
         },
         settings = {
           run = "onSave",
