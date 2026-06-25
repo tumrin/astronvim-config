@@ -14,7 +14,6 @@ return {
         "zls",
         "qmlls",
         "slang",
-        "cucumber-language-server",
         -- install formatters
         "gofumpt",
         -- install debuggers
