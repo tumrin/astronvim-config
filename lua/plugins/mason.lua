@@ -14,6 +14,7 @@ return {
         "slang",
         -- install formatters
         "gofumpt",
+        "actionlint",
         -- install debuggers
         -- install any other package
       },
