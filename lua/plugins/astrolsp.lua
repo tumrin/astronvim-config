@@ -54,6 +54,9 @@ return {
               maxTsServerMemory = 8192,
               nodePath = "node",
             },
+            experimental = {
+              useTsgo = true,
+            },
           },
         },
       },
