@@ -16,6 +16,7 @@ return {
         "gofumpt",
         "actionlint",
         -- install debuggers
+        "js-debug-adapter",
         -- install any other package
       },
     },
