@@ -39,6 +39,7 @@ return {
         end,
         settings = {
           vtsls = {
+            autoUseWorkspaceTsdk = true,
             experimental = {
               completion = {
                 enableServerSideFuzzyMatch = true,
@@ -53,9 +54,6 @@ return {
             tsserver = {
               maxTsServerMemory = 8192,
               nodePath = "node",
-            },
-            experimental = {
-              useTsgo = true,
             },
           },
         },
