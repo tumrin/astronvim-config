@@ -7,15 +7,11 @@ return {
       inlay_hints = true,
       signature_help = true,
     },
-    formatting = {
-      async = true,
-    },
     servers = { "gdscript", "gdshader_lsp" },
     ---@diagnostic disable: missing-fields
     config = {
       eslint = {
         flags = {
-          allow_incremental_sync = false,
           debounce_text_changes = 5000,
         },
         settings = {
