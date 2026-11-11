@@ -28,6 +28,21 @@ return {
         filetypes = { "qml", "qtquick" },
         root_dir = require("lspconfig.util").root_pattern("qmlls.ini", ".git", "."),
       },
+      cucumber_language_server = {
+        filetypes = { "cucumber", "feature" },
+        root_markers = { "package.json", ".git" },
+        settings = {
+          cucumber = {
+            features = { "**/*.feature" },
+            glue = {
+              "**/step_definitions/*.js",
+              "**/step_definitions/*.ts",
+              "**/support/*.js",
+              "**/support/*.ts",
+            },
+          },
+        },
+      },
       vtsls = {
         on_attach = function(client)
           client.server_capabilities.documentFormattingProvider = false

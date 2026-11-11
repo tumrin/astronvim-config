@@ -12,9 +12,11 @@ return {
         "zls",
         "qmlls",
         "slang",
+        "cucumber-language-server",
         -- install formatters
         "gofumpt",
         "actionlint",
+        "reformat-gherkin",
         -- install debuggers
         "js-debug-adapter",
         -- install any other package
