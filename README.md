@@ -1,6 +1,6 @@
 # AstroNvim config
 
-Based on AstroNvim v6 [template](https://github.com/AstroNvim/template)
+Based on AstroNvim v7 [template](https://github.com/AstroNvim/template)
 
 ## Dependencies
 - Nerd fonts
